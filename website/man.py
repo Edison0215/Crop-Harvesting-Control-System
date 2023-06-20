@@ -1,81 +1,80 @@
-#import RPi.GPIO as GPIO
-from flask import Blueprint, redirect, request
-
-# GPIO.setmode(GPIO.BCM)
+from flask import Blueprint, render_template, redirect
 
 man = Blueprint('man', __name__)
 
-# pins = {
-#    23 : {'name' : 'GPIO 23', 'state' : GPIO.LOW},
-#    24 : {'name' : 'GPIO 24', 'state' : GPIO.LOW}
-# }
+@man.route("/manual")
+def manual():
+    return render_template('manual.html')
 
-# for pin in pins:
-#    GPIO.setup(pin, GPIO.OUT)
-#    GPIO.output(pin, GPIO.LOW)
+@man.route("/XCW/on")
+def XCW_ON():
+    print("XCW_ON")
+    # Perform actions for XCW ON
+    return render_template('manual.html')
 
+@man.route("/XCW/off")
+def XCW_OFF():
+    print("XCW_OFF")
+    # Perform actions for XCW OFF
+    return render_template('manual.html')
 
-@man.route("/XCW", methods=["GET", "POST"])
-def XCW():
-    if request.method == "POST":
-        print("XCW_ON")
-        # GPIO.output(23, GPIO.HIGH)
-    else:
-        print("XCW_OFF")
-        # GPIO.output(23, GPIO.LOW)
-    return redirect("/manual")
+@man.route("/XCCW/on")
+def XCCW_ON():
+    print("XCCW_ON")
+    # Perform actions for XCCW ON
+    return render_template('manual.html')
 
+@man.route("/XCCW/off")
+def XCCW_OFF():
+    print("XCCW_OFF")
+    # Perform actions for XCCW OFF
+    return render_template('manual.html')
 
-@man.route("/XCCW", methods=["GET", "POST"])
-def XCCW():
-    if request.method == "POST":
-        print("XCCW_ON")
-        # GPIO.output(24, GPIO.HIGH)
-    else:
-        print("XCCW_OFF")
-        # GPIO.output(24, GPIO.LOW)
-    return redirect("/manual")
+@man.route("/YCW/on")
+def YCW_ON():
+    print("YCW_ON")
+    # Perform actions for YCW ON
+    return render_template('manual.html')
 
+@man.route("/YCW/off")
+def YCW_OFF():
+    print("YCW_OFF")
+    # Perform actions for YCW OFF
+    return render_template('manual.html')
 
-@man.route("/YCW", methods=["GET", "POST"])
-def YCW():
-    if request.method == "POST":
-        print("YCW_ON")
-        # GPIO.output(23, GPIO.HIGH)
-    else:
-        print("YCW_OFF")
-        # GPIO.output(23, GPIO.LOW)
-    return redirect("/manual")
+@man.route("/YCCW/on")
+def YCCW_ON():
+    print("YCCW_ON")
+    # Perform actions for YCCW ON
+    return render_template('manual.html')
 
+@man.route("/YCCW/off")
+def YCCW_OFF():
+    print("YCCW_OFF")
+    # Perform actions for YCCW OFF
+    return render_template('manual.html')
 
-@man.route("/YCCW", methods=["GET", "POST"])
-def YCCW():
-    if request.method == "POST":
-        print("YCCW_ON")
-        # GPIO.output(24, GPIO.HIGH)
-    else:
-        print("YCCW_OFF")
-        # GPIO.output(24, GPIO.LOW)
-    return redirect("/manual")
+@man.route("/ZCW/on")
+def ZCW_ON():
+    print("ZCW_ON")
+    # Perform actions for ZCW ON
+    return render_template('manual.html')
 
+@man.route("/ZCW/off")
+def ZCW_OFF():
+    print("ZCW_OFF")
+    # Perform actions for ZCW OFF
+    return render_template('manual.html')
 
-@man.route("/ZCW", methods=["GET", "POST"])
-def ZCW():
-    if request.method == "POST":
-        print("ZCW_ON")
-        # GPIO.output(23, GPIO.HIGH)
-    else:
-        print("ZCW_OFF")
-        # GPIO.output(23, GPIO.LOW)
-    return redirect("/manual")
+@man.route("/ZCCW/on")
+def ZCCW_ON():
+    print("ZCCW_ON")
+    # Perform actions for ZCCW ON
+    return render_template('manual.html')
 
+@man.route("/ZCCW/off")
+def ZCCW_OFF():
+    print("ZCCW_OFF")
+    # Perform actions for ZCCW OFF
+    return render_template('manual.html')
 
-@man.route("/ZCCW", methods=["GET", "POST"])
-def ZCCW():
-    if request.method == "POST":
-        print("ZCCW_ON")
-        # GPIO.output(24, GPIO.HIGH)
-    else:
-        print("ZCCW_OFF")
-        # GPIO.output(24, GPIO.LOW)
-    return redirect("/manual")
