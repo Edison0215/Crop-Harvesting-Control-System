@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h3>This is the homepage</h3>
+  <img src="{{ url_for('views.video_feed') }}" alt="Camera Feed" width="560" height="400" />
+{% endblock %}
