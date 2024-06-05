@@ -5,7 +5,7 @@ The python codes are only act as a website protoype of devleoping a website in c
 ## Declaration 
 This code is modifed by taking source codes from https://github.com/techwithtim/Flask-Web-App-Tutorial as references.
 
-## To run the website
+## To Run The Website
 - Download this folder
 - Open cmd in the folder's directory
 - ```pip install flask```
