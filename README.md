@@ -3,7 +3,7 @@ This repository consists of python codes for the prototype development of an aut
 The python codes are only act as a website protoype of devleoping a website in controlling a 3 DOF stepper motor collect readily harvested crops via a clamp.
 
 ## Declaration 
-This code is modifed by taking source codes from https://github.com/techwithtim/Flask-Web-App-Tutorial as references.
+This code is modifed by taking source codes from https://github.com/techwithtim/Flask-Web-App-Tutorial as reference.
 
 ## To Run The Website
 - Download this folder
