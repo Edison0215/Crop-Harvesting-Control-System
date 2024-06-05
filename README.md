@@ -18,4 +18,4 @@ This code is modifed by taking source codes from https://github.com/techwithtim/
 ## man2.0.py
 - Current python code ```main.py ``` is taking ```man.py``` library as default.
 - ```man2.0.py``` is utlized to display livestream video of the crops via Rasberry Pi camera in the website.
--  ```xaxis.py``` is not available in this repository due to code lost. (It is used to change the clockwise or anticlockwise of the stepper motor in each x, y, z direction, opening and closing clamp.)
+-  ```xaxis.py``` (used in man2.0.py) is not available in this repository due to code lost. (It is used to change the clockwise or anticlockwise of the stepper motor in each x, y, z direction, opening and closing clamp.)
